@@ -1,0 +1,201 @@
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+* {
+    margin: 0;
+}
+
+$color: #4ABCEC;
+$colorwhite: #FFFFFF;
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    padding: 0 300px;
+    margin: 0 auto;
+}
+
+.background {
+    background-size: 100%;
+    height: 1420px;
+    background-image: url('../dist/images/jpg/background.jpg');
+}
+
+
+footer {
+
+    .logo {
+        .logo-text {
+            margin-left: 10px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .logo-name {
+            font-family: Avenir Next Cyr;
+            font-size: 18px;
+            font-weight: 750;
+            line-height: 22.05px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: $color;
+        }
+
+        .logo-desc {
+            font-family: Avenir Next Cyr;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 22.05px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: white;
+        }
+
+    }
+
+    .qw {
+        box-shadow: 58px 4px 191px 47px #000000 inset;
+
+    }
+
+    .tel {
+        a {
+            width: 170px;
+            text-decoration: none;
+            font-family: Avenir Next Cyr;
+            font-size: 18px;
+            font-weight: 450;
+            line-height: 22.05px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: $colorwhite;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+main {
+    .about-us {
+        margin-top: 155px;
+
+        .about-us__info {
+            max-width: 700px;
+
+            .about-us__info__welcome {
+                font-family: Avenir Next Cyr;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 22.05px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: #747D81;
+            }
+
+            h1 {
+                font-family: Avenir Next Cyr;
+                font-size: 108px;
+                font-weight: 600;
+                line-height: 132.3px;
+                text-align: left;
+                margin: 18px 0;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                background: -webkit-linear-gradient(#FFFFFF, #1A3031);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .about-us__info__web {
+                font-family: Avenir Next Cyr;
+                font-size: 18px;
+                font-weight: 450;
+                line-height: 22.05px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $colorwhite;
+            }
+
+            .about-us__info__guarantee {
+                display: flex;
+
+                .about-us__info__guarantee__certificate {
+                    width: 71px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 71px;
+                    border: 2px solid #49b8e84a !important;
+                    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+                    border-radius: 12px;
+                    border: 2px;
+                }
+            }
+
+            .about-us__info__guarantee {
+                margin-top: 77px;
+
+                .about-us__info__guarantee__text {
+                    margin-left: 33px;
+                    h3 {
+                        font-family: Avenir Next Cyr;
+                        font-size: 20px;
+                        font-weight: 900;
+                        line-height: 22.05px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: $colorwhite;
+
+                    }
+
+                    p {
+                        font-family: Avenir Next Cyr;
+                        font-size: 18px;
+                        font-weight: 450;
+                        line-height: 20px;
+                        margin-top: 10px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: #4ABCEC;
+
+                    }
+                }
+            }
+
+            button {
+                background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+                border: 0;
+                box-shadow: 0px 7px 20px -7px #00E0FF;
+                width: 479px;
+                height: 60px;
+                border-radius: 9px;
+                font-family: Avenir Next Cyr;
+                font-size: 12px;
+                font-weight: 750;
+                line-height: 14.7px;
+                letter-spacing: 0.25em;
+                margin-top: 101px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $colorwhite;
+
+            }
+        }
+    }
+}

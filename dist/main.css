@@ -1,0 +1,169 @@
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
+  \*********************************************************************************************************/
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  padding: 0 300px;
+  margin: 0 auto;
+}
+
+.background {
+  background-size: 100%;
+  height: 1420px;
+  background-image: url(f264b67022a0149a6f53.jpg);
+}
+
+footer .logo .logo-text {
+  margin-left: 10px;
+}
+footer .logo img {
+  width: 100px;
+  height: 100px;
+}
+footer .logo .logo-name {
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4ABCEC;
+}
+footer .logo .logo-desc {
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+footer .qw {
+  box-shadow: 58px 4px 191px 47px #000000 inset;
+}
+footer .tel a {
+  width: 170px;
+  text-decoration: none;
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 22.05px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .about-us {
+  margin-top: 155px;
+}
+main .about-us .about-us__info {
+  max-width: 700px;
+}
+main .about-us .about-us__info .about-us__info__welcome {
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #747D81;
+}
+main .about-us .about-us__info h1 {
+  font-family: Avenir Next Cyr;
+  font-size: 108px;
+  font-weight: 600;
+  line-height: 132.3px;
+  text-align: left;
+  margin: 18px 0;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background: -webkit-linear-gradient(#FFFFFF, #1A3031);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .about-us .about-us__info .about-us__info__web {
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+main .about-us .about-us__info .about-us__info__guarantee {
+  display: flex;
+}
+main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__certificate {
+  width: 71px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
+  border: 2px solid rgba(73, 184, 232, 0.2901960784) !important;
+  background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+  border-radius: 12px;
+  border: 2px;
+}
+main .about-us .about-us__info .about-us__info__guarantee {
+  margin-top: 77px;
+}
+main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text {
+  margin-left: 33px;
+}
+main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text h3 {
+  font-family: Avenir Next Cyr;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text p {
+  font-family: Avenir Next Cyr;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 20px;
+  margin-top: 10px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4ABCEC;
+}
+main .about-us .about-us__info button {
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+  border: 0;
+  box-shadow: 0px 7px 20px -7px #00E0FF;
+  width: 479px;
+  height: 60px;
+  border-radius: 9px;
+  font-family: Avenir Next Cyr;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 14.7px;
+  letter-spacing: 0.25em;
+  margin-top: 101px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
