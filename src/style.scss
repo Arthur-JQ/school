@@ -8,6 +8,7 @@
 
 * {
     margin: 0;
+    // border: 1px solid rgb(213, 2, 167);
 }
 
 $color: #4ABCEC;
@@ -22,13 +23,12 @@ $colorwhite: #FFFFFF;
 
 .background {
     background-size: 100%;
-    height: 1420px;
+    height: 1000px;
     background-image: url('../dist/images/jpg/background.jpg');
 }
 
 
-footer {
-
+header {
     .logo {
         .logo-text {
             margin-left: 10px;
@@ -88,10 +88,13 @@ footer {
 
 main {
     .about-us {
-        margin-top: 155px;
+        position: relative;
+        margin-top: 168px;
 
         .about-us__info {
             max-width: 700px;
+            width: 100%;
+            height: 730px;
 
             .about-us__info__welcome {
                 font-family: Avenir Next Cyr;
@@ -150,6 +153,7 @@ main {
 
                 .about-us__info__guarantee__text {
                     margin-left: 33px;
+
                     h3 {
                         font-family: Avenir Next Cyr;
                         font-size: 20px;
@@ -177,24 +181,241 @@ main {
                 }
             }
 
-            button {
-                background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
-                border: 0;
-                box-shadow: 0px 7px 20px -7px #00E0FF;
-                width: 479px;
-                height: 60px;
-                border-radius: 9px;
+            .about-us__info__footer {
+                margin-bottom: 196px;
+
+                button {
+                    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+                    border: 0;
+                    box-shadow: 0px 7px 20px -7px #00E0FF;
+                    width: 479px;
+                    height: 60px;
+                    border-radius: 9px;
+                    font-family: Avenir Next Cyr;
+                    font-size: 12px;
+                    font-weight: 750;
+                    line-height: 14.7px;
+                    letter-spacing: 0.25em;
+                    margin-top: 101px;
+                    text-align: center;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: $colorwhite;
+
+                }
+            }
+
+            .down {
+                position: absolute;
+                left: 600px;
+                display: flex;
+                flex-direction: column;
+                height: 150px;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    transform: rotate(-90deg);
+                    font-family: Avenir Next Cyr;
+                    font-size: 10px;
+                    font-weight: 600;
+                    line-height: 12.25px;
+                    letter-spacing: 0.36em;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: #747D81;
+
+                }
+
+                .switch {
+                    transform: rotate(-90deg);
+
+                    position: relative;
+                    display: inline-block;
+                    width: 60px;
+                    height: 34px;
+
+                    input {
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+                    }
+
+                    .slider {
+                        position: absolute;
+                        cursor: pointer;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: #ccc;
+                        transition: .4s;
+
+                        &:before {
+                            position: absolute;
+                            content: "";
+                            height: 26px;
+                            width: 26px;
+                            left: 4px;
+                            bottom: 3px;
+                            box-shadow: 0px 4px 10px 0px #4AD9ECBF;
+                            background: #4ABCEC;
+                            transition: .4s;
+                        }
+                    }
+
+                    input:checked+.slider {
+                        background-color: #2195f300;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px #2196F3;
+                    }
+
+                    input:checked+.slider:before {
+                        transform: translateX(26px);
+                    }
+
+                    .slider.round {
+                        background-color: rgba(255, 0, 0, 0);
+                        border-radius: 34px;
+                        border: 1px solid #4A8BEC;
+
+                        &:before {
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .consultation {
+        position: absolute;
+        left: 100px;
+        top: 150px;
+        display: flex;
+        flex-direction: column;
+        height: 230px;
+        align-items: center;
+        justify-content: space-between;
+
+        .consultation-ikon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0px 7px 20px -7px #00E0FF;
+            background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-family: Avenir Next Cyr;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 12.25px;
+            letter-spacing: 0.36em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #00E0FF;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .advantages {
+        width: 100%;
+        height: 800px;
+        background: linear-gradient(286.41deg, rgb(2, 35, 53) 3.63%, rgb(12, 55, 61) 90.98%);
+        // background-color: #000000;
+
+        .advantages-main {
+            width: 100%;
+            height: 100%;
+            padding-top: 124px;
+            h2 {
                 font-family: Avenir Next Cyr;
-                font-size: 12px;
-                font-weight: 750;
-                line-height: 14.7px;
-                letter-spacing: 0.25em;
-                margin-top: 101px;
-                text-align: center;
+                font-size: 54px;
+                font-weight: 450;
+                text-align: center !important;
+                line-height: 66.15px;
+                text-align: left;
+                margin-bottom: 58px;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: $colorwhite;
 
+                span {
+                    font-family: Avenir Next Cyr;
+                    font-size: 54px;
+                    font-weight: 450;
+                    line-height: 66.15px;
+                    text-align: left;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: rgb(74, 188, 236);
+                }
+            }
+
+            .advantages-card {
+                .advantages-card__row1 {
+                    div {
+
+                        background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+                        width: 240px;
+                        height: 212px;
+                        border-radius: 20px;
+                        border: 2px solid #49b8e84a !important;
+                        padding-left: 45px;
+
+                        img {
+                            margin-top: 39px;
+                        }
+
+                        p {
+                            font-family: Avenir Next Cyr;
+                            font-size: 15px;
+                            font-weight: 450;
+                            line-height: 18.38px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: $colorwhite;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .advantages-card__row2 {
+                    margin-top: 25px;
+                    div {
+                        max-width: 342px;
+                        width: 100%;
+                        height: 217px;
+                        background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
+                        border-radius: 20px;
+                        border: 2px solid #49b8e84a !important;
+                        padding-left: 45px;
+
+                        img {
+                            margin-top: 39px;
+                        }
+
+                        p {
+                            font-family: Avenir Next Cyr;
+                            font-size: 15px;
+                            font-weight: 450;
+                            line-height: 18.38px;
+                            text-align: left;
+                            text-underline-position: from-font;
+                            text-decoration-skip-ink: none;
+                            color: $colorwhite;
+                            margin-top: 15px;
+                        }
+                    } 
+                }
             }
         }
     }
