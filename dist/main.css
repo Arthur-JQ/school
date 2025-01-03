@@ -1,6 +1,86 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
+@font-face {
+  font-family: "AvenirNextCyr-Bold";
+  src: url(fonts/avenirnextcyr-bold.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-bold.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-bold.woff2) format("woff2"), url(fonts/avenirnextcyr-bold.woff) format("woff"), url(fonts/avenirnextcyr-bold.ttf) format("truetype"), url(fonts/avenirnextcyr-bold.svg#avenirnextcyr-bold) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-BoldItalic";
+  src: url(fonts/avenirnextcyr-bolditalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-bolditalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-bolditalic.woff2) format("woff2"), url(fonts/avenirnextcyr-bolditalic.woff) format("woff"), url(fonts/avenirnextcyr-bolditalic.ttf) format("truetype"), url(fonts/avenirnextcyr-bolditalic.svg#avenirnextcyr-bolditalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Demi";
+  src: url(fonts/avenirnextcyr-demi.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-demi.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-demi.woff2) format("woff2"), url(fonts/avenirnextcyr-demi.woff) format("woff"), url(fonts/avenirnextcyr-demi.ttf) format("truetype"), url(fonts/avenirnextcyr-demi.svg#avenirnextcyr-demi) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-DemiItalic";
+  src: url(fonts/avenirnextcyr-demiitalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-demiitalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-demiitalic.woff2) format("woff2"), url(fonts/avenirnextcyr-demiitalic.woff) format("woff"), url(fonts/avenirnextcyr-demiitalic.ttf) format("truetype"), url(fonts/avenirnextcyr-demiitalic.svg#avenirnextcyr-demiitalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Heavy";
+  src: url(fonts/avenirnextcyr-heavy.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-heavy.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-heavy.woff2) format("woff2"), url(fonts/avenirnextcyr-heavy.woff) format("woff"), url(fonts/avenirnextcyr-heavy.ttf) format("truetype"), url(fonts/avenirnextcyr-heavy.svg#avenirnextcyr-heavy) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-HeavyItalic";
+  src: url(fonts/avenirnextcyr-heavyitalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-heavyitalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-heavyitalic.woff2) format("woff2"), url(fonts/avenirnextcyr-heavyitalic.woff) format("woff"), url(fonts/avenirnextcyr-heavyitalic.ttf) format("truetype"), url(fonts/avenirnextcyr-heavyitalic.svg#avenirnextcyr-heavyitalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Italic";
+  src: url(fonts/avenirnextcyr-italic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-italic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-italic.woff2) format("woff2"), url(fonts/avenirnextcyr-italic.woff) format("woff"), url(fonts/avenirnextcyr-italic.ttf) format("truetype"), url(fonts/avenirnextcyr-italic.svg#avenirnextcyr-italic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Light";
+  src: url(fonts/avenirnextcyr-light.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-light.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-light.woff2) format("woff2"), url(fonts/avenirnextcyr-light.woff) format("woff"), url(fonts/avenirnextcyr-light.ttf) format("truetype"), url(fonts/avenirnextcyr-light.svg#avenirnextcyr-light) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-LightItalic";
+  src: url(fonts/avenirnextcyr-lightitalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-lightitalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-lightitalic.woff2) format("woff2"), url(fonts/avenirnextcyr-lightitalic.woff) format("woff"), url(fonts/avenirnextcyr-lightitalic.ttf) format("truetype"), url(fonts/avenirnextcyr-lightitalic.svg#avenirnextcyr-lightitalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Medium";
+  src: url(fonts/avenirnextcyr-medium.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-medium.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-medium.woff2) format("woff2"), url(fonts/avenirnextcyr-medium.woff) format("woff"), url(fonts/avenirnextcyr-medium.ttf) format("truetype"), url(fonts/avenirnextcyr-medium.svg#avenirnextcyr-medium) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-MediumItalic";
+  src: url(fonts/avenirnextcyr-mediumitalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-mediumitalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-mediumitalic.woff2) format("woff2"), url(fonts/avenirnextcyr-mediumitalic.woff) format("woff"), url(fonts/avenirnextcyr-mediumitalic.ttf) format("truetype"), url(fonts/avenirnextcyr-mediumitalic.svg#avenirnextcyr-mediumitalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Regular";
+  src: url(fonts/avenirnextcyr-regular.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-regular.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-regular.woff2) format("woff2"), url(fonts/avenirnextcyr-regular.woff) format("woff"), url(fonts/avenirnextcyr-regular.ttf) format("truetype"), url(fonts/avenirnextcyr-regular.svg#avenirnextcyr-regular) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-Thin";
+  src: url(fonts/avenirnextcyr-thin.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-thin.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-thin.woff2) format("woff2"), url(fonts/avenirnextcyr-thin.woff) format("woff"), url(fonts/avenirnextcyr-thin.ttf) format("truetype"), url(fonts/avenirnextcyr-thin.svg#avenirnextcyr-thin) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-ThinItalic";
+  src: url(fonts/avenirnextcyr-thinitalic.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-thinitalic.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-thinitalic.woff2) format("woff2"), url(fonts/avenirnextcyr-thinitalic.woff) format("woff"), url(fonts/avenirnextcyr-thinitalic.ttf) format("truetype"), url(fonts/avenirnextcyr-thinitalic.svg#avenirnextcyr-thinitalic) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-UltraLight";
+  src: url(fonts/avenirnextcyr-ultralight.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-ultralight.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-ultralight.woff2) format("woff2"), url(fonts/avenirnextcyr-ultralight.woff) format("woff"), url(fonts/avenirnextcyr-ultralight.ttf) format("truetype"), url(fonts/avenirnextcyr-ultralight.svg#avenirnextcyr-ultralight) format("svg"); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "AvenirNextCyr-UltraLightIt";
+  src: url(fonts/avenirnextcyr-ultralightit.eot); /* IE 9 Compatibility Mode */
+  src: url(fonts/avenirnextcyr-ultralightit.eot?#iefix) format("embedded-opentype"), url(fonts/avenirnextcyr-ultralightit.woff2) format("woff2"), url(fonts/avenirnextcyr-ultralightit.woff) format("woff"), url(fonts/avenirnextcyr-ultralightit.ttf) format("truetype"), url(fonts/avenirnextcyr-ultralightit.svg#avenirnextcyr-ultralightit) format("svg"); /* Chrome < 4, Legacy iOS */
+}
 .flexbox {
   display: flex;
   justify-content: space-between;
@@ -9,6 +89,8 @@
 
 * {
   margin: 0;
+  font-family: AvenirNextCyr-Demi;
+  text-wrap: pretty;
 }
 
 .container {
@@ -20,7 +102,7 @@
 
 .background {
   background-size: 100%;
-  height: 1000px;
+  height: 1500px;
   background-image: url(f264b67022a0149a6f53.jpg);
 }
 
@@ -32,7 +114,6 @@ header .logo img {
   height: 100px;
 }
 header .logo .logo-name {
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 750;
   line-height: 22.05px;
@@ -42,7 +123,6 @@ header .logo .logo-name {
   color: #4ABCEC;
 }
 header .logo .logo-desc {
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 450;
   line-height: 22.05px;
@@ -54,10 +134,13 @@ header .logo .logo-desc {
 header .qw {
   box-shadow: 58px 4px 191px 47px #000000 inset;
 }
+header .tel {
+  max-width: 200px;
+  width: 100%;
+}
 header .tel a {
-  width: 170px;
+  width: 100%;
   text-decoration: none;
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 450;
   line-height: 22.05px;
@@ -76,10 +159,8 @@ main .about-us {
 main .about-us .about-us__info {
   max-width: 700px;
   width: 100%;
-  height: 730px;
 }
 main .about-us .about-us__info .about-us__info__welcome {
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 600;
   line-height: 22.05px;
@@ -89,7 +170,6 @@ main .about-us .about-us__info .about-us__info__welcome {
   color: #747D81;
 }
 main .about-us .about-us__info h1 {
-  font-family: Avenir Next Cyr;
   font-size: 108px;
   font-weight: 600;
   line-height: 132.3px;
@@ -102,7 +182,6 @@ main .about-us .about-us__info h1 {
   -webkit-text-fill-color: transparent;
 }
 main .about-us .about-us__info .about-us__info__web {
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 450;
   line-height: 22.05px;
@@ -132,7 +211,6 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
   margin-left: 33px;
 }
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text h3 {
-  font-family: Avenir Next Cyr;
   font-size: 20px;
   font-weight: 900;
   line-height: 22.05px;
@@ -142,7 +220,6 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
   color: #FFFFFF;
 }
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text p {
-  font-family: Avenir Next Cyr;
   font-size: 18px;
   font-weight: 450;
   line-height: 20px;
@@ -153,7 +230,7 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
   color: #4ABCEC;
 }
 main .about-us .about-us__info .about-us__info__footer {
-  margin-bottom: 196px;
+  margin: 101px 0;
 }
 main .about-us .about-us__info .about-us__info__footer button {
   background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
@@ -162,12 +239,10 @@ main .about-us .about-us__info .about-us__info__footer button {
   width: 479px;
   height: 60px;
   border-radius: 9px;
-  font-family: Avenir Next Cyr;
   font-size: 12px;
   font-weight: 750;
   line-height: 14.7px;
   letter-spacing: 0.25em;
-  margin-top: 101px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -175,7 +250,8 @@ main .about-us .about-us__info .about-us__info__footer button {
 }
 main .about-us .about-us__info .down {
   position: absolute;
-  left: 600px;
+  top: 410px;
+  left: 680px;
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -184,7 +260,6 @@ main .about-us .about-us__info .down {
 }
 main .about-us .about-us__info .down p {
   transform: rotate(-90deg);
-  font-family: Avenir Next Cyr;
   font-size: 10px;
   font-weight: 600;
   line-height: 12.25px;
@@ -265,7 +340,6 @@ main .consultation .consultation-ikon {
   align-items: center;
 }
 main .consultation p {
-  font-family: Avenir Next Cyr;
   font-size: 10px;
   font-weight: 600;
   line-height: 12.25px;
@@ -280,6 +354,7 @@ main .advantages {
   width: 100%;
   height: 800px;
   background: linear-gradient(286.41deg, rgb(2, 35, 53) 3.63%, rgb(12, 55, 61) 90.98%);
+  box-shadow: 0 -6px 4px -4px #00E0FF;
 }
 main .advantages .advantages-main {
   width: 100%;
@@ -287,7 +362,6 @@ main .advantages .advantages-main {
   padding-top: 124px;
 }
 main .advantages .advantages-main h2 {
-  font-family: Avenir Next Cyr;
   font-size: 54px;
   font-weight: 450;
   text-align: center !important;
@@ -299,7 +373,6 @@ main .advantages .advantages-main h2 {
   color: #FFFFFF;
 }
 main .advantages .advantages-main h2 span {
-  font-family: Avenir Next Cyr;
   font-size: 54px;
   font-weight: 450;
   line-height: 66.15px;
@@ -320,7 +393,6 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div im
   margin-top: 39px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div p {
-  font-family: Avenir Next Cyr;
   font-size: 15px;
   font-weight: 450;
   line-height: 18.38px;
@@ -346,7 +418,6 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div im
   margin-top: 39px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div p {
-  font-family: Avenir Next Cyr;
   font-size: 15px;
   font-weight: 450;
   line-height: 18.38px;
@@ -355,4 +426,83 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div p 
   text-decoration-skip-ink: none;
   color: #FFFFFF;
   margin-top: 15px;
+}
+main .ai {
+  width: 100%;
+  height: 913px;
+  background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+  box-shadow: 0 -6px 4px -4px #00E0FF;
+}
+main .ai .ai-content .ai-content__info h2 {
+  padding-top: 117px;
+  margin-bottom: 64px;
+  font-size: 54px;
+  font-weight: 450;
+  line-height: 66.15px;
+  text-align: left;
+  text-transform: uppercase;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+main .ai .ai-content .ai-content__info h2 span {
+  font-family: Avenir Next Cyr;
+  font-size: 54px;
+  font-weight: 450;
+  line-height: 66.15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(74, 188, 236);
+}
+main .ai .ai-content .ai-content__info ul {
+  padding: 0;
+  margin-bottom: 69px;
+}
+main .ai .ai-content .ai-content__info ul li {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  background: linear-gradient(90deg, rgba(31, 63, 77, 0.53) 52.08%, rgba(31, 75, 94, 0) 100%);
+  padding: 10px;
+  margin-top: 5px;
+  max-width: 624px;
+  width: 100%;
+}
+main .ai .ai-content .ai-content__info ul li p {
+  margin-left: 19px;
+  font-family: Avenir Next Cyr;
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 18.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+main .ai .ai-content .ai-content__info a {
+  width: 479px;
+  height: 60px;
+  border-radius: 9px;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+  box-shadow: 0px 7px 20px -7px #00E0FF;
+  text-decoration: none;
+  padding: 22px 13px 25px 13px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 14.7px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 70px;
+}
+main .ai .ai-content .ai-content__photo {
+  width: 937px;
+  height: 625px;
+  box-shadow: 0px 0px 110px 14px #000000 inset;
+  background-image: url(723bc445751e4867c69b.png);
 }
