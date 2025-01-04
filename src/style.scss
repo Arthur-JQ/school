@@ -6,8 +6,6 @@
     align-items: center;
 }
 
-
-
 * {
     margin: 0;
     font-family: AvenirNextCyr-Demi;
@@ -20,7 +18,7 @@ $colorwhite: #FFFFFF;
 
 .container {
     max-width: 1290px;
-    width: 100%;
+    // width: 100%;
     padding: 0 300px;
     margin: 0 auto;
 }
@@ -95,6 +93,7 @@ header {
 
 main {
     .about-us {
+
         position: relative;
         margin-top: 168px;
 
@@ -336,16 +335,14 @@ main {
     }
 
     .advantages {
+
         width: 100%;
         height: 800px;
         background: linear-gradient(286.41deg, rgb(2, 35, 53) 3.63%, rgb(12, 55, 61) 90.98%);
         box-shadow: 0 -6px 4px -4px #00E0FF;
 
         .advantages-main {
-            // box-shadow: inset 0 -7px 20px -10px #4AD9EC;
-            // backdrop-filter: blur(2px);
-
-            width: 100%;
+            // width: 100%;
             height: 100%;
             padding-top: 124px;
 
@@ -436,6 +433,7 @@ main {
     }
 
     .ai {
+
         width: 100%;
         background-size: cover;
         height: 913px;
@@ -446,6 +444,7 @@ main {
         background-image: url('../dist/images/png/ai_artificial_intelligence_ml_machine_learning_vector_by_kohb_gettyimages_1146634284-100817775-large\ 1.png');
 
         .ai-content {
+            box-shadow: 0 -6px 4px -4px #00E0FF;
             opacity: 1;
 
             .ai-content__info {
@@ -463,7 +462,6 @@ main {
                     color: $colorwhite;
 
                     span {
-                        font-family: Avenir Next Cyr;
                         font-size: 54px;
                         font-weight: 450;
                         line-height: 66.15px;
@@ -490,7 +488,6 @@ main {
 
                         p {
                             margin-left: 19px;
-                            font-family: Avenir Next Cyr;
                             font-size: 15px;
                             font-weight: 450;
                             line-height: 18.38px;
@@ -535,6 +532,7 @@ main {
     }
 
     .important {
+        box-shadow: 0 -6px 4px -4px #00E0FF;
         width: 100%;
         height: 809px;
         opacity: 0px !important;
@@ -564,15 +562,27 @@ main {
                 }
             }
         }
-        
+
+
         .mt46 {
             margin-top: 46px;
-            margin-left: 49px;
         }
+
         .important-row1 {
             .important-row1__item {
                 max-width: 568px;
                 width: 100%;
+
+                * {
+                    transition: 0.8s;
+                }
+
+                &:hover {
+                    * {
+                        opacity: 1;
+
+                    }
+                }
 
                 div {
                     max-width: 285px;
@@ -617,6 +627,36 @@ main {
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .our-course {
+        padding-bottom: 110px;
+        width: 100%;
+        background-position-y: center;
+        box-shadow: 0 -6px 4px -4px #00E0FF;
+        height: 891px;
+        background-image: url('../dist/images/jpg/Фон\ \(1\)\ \(1\).jpg');
+        .ai-content__info {
+            ul {
+                li {
+                    background: none !important;
+                    // span {
+                    //     background: #03E1FF87;
+
+                    //     backdrop-filter: blur(11px) !important;
+
+                    // }
+                }
+            }
+        }
+        .fons {
+            width: 554px;
+            height: 542px;     
+            position: relative;
+            left: 150px;
+            background-size: cover;
+            background-image: url('../dist/images/svg/Блики.svg');
         }
     }
 }

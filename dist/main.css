@@ -1,6 +1,7 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
+@charset "UTF-8";
 @font-face {
   font-family: "AvenirNextCyr-Bold";
   src: url(fonts/avenirnextcyr-bold.eot); /* IE 9 Compatibility Mode */
@@ -95,7 +96,6 @@
 
 .container {
   max-width: 1290px;
-  width: 100%;
   padding: 0 300px;
   margin: 0 auto;
 }
@@ -357,7 +357,6 @@ main .advantages {
   box-shadow: 0 -6px 4px -4px #00E0FF;
 }
 main .advantages .advantages-main {
-  width: 100%;
   height: 100%;
   padding-top: 124px;
 }
@@ -438,6 +437,7 @@ main .ai {
   background-image: url(723bc445751e4867c69b.png);
 }
 main .ai .ai-content {
+  box-shadow: 0 -6px 4px -4px #00E0FF;
   opacity: 1;
 }
 main .ai .ai-content .ai-content__info h2 {
@@ -453,7 +453,6 @@ main .ai .ai-content .ai-content__info h2 {
   color: #FFFFFF;
 }
 main .ai .ai-content .ai-content__info h2 span {
-  font-family: Avenir Next Cyr;
   font-size: 54px;
   font-weight: 450;
   line-height: 66.15px;
@@ -478,7 +477,6 @@ main .ai .ai-content .ai-content__info ul li {
 }
 main .ai .ai-content .ai-content__info ul li p {
   margin-left: 19px;
-  font-family: Avenir Next Cyr;
   font-size: 15px;
   font-weight: 450;
   line-height: 18.38px;
@@ -514,6 +512,7 @@ main .ai .ai-content .ai-content__photo {
   background-image: url(723bc445751e4867c69b.png);
 }
 main .important {
+  box-shadow: 0 -6px 4px -4px #00E0FF;
   width: 100%;
   height: 809px;
   opacity: 0px !important;
@@ -542,11 +541,16 @@ main .important .important-title h2 span {
 }
 main .important .mt46 {
   margin-top: 46px;
-  margin-left: 49px;
 }
 main .important .important-row1 .important-row1__item {
   max-width: 568px;
   width: 100%;
+}
+main .important .important-row1 .important-row1__item * {
+  transition: 0.8s;
+}
+main .important .important-row1 .important-row1__item:hover * {
+  opacity: 1;
 }
 main .important .important-row1 .important-row1__item div {
   max-width: 285px;
@@ -584,4 +588,23 @@ main .important .important-row1 .important-row1__item p {
   color: #FFFFFF;
   max-width: 250px;
   width: 100%;
+}
+main .our-course {
+  padding-bottom: 110px;
+  width: 100%;
+  background-position-y: center;
+  box-shadow: 0 -6px 4px -4px #00E0FF;
+  height: 891px;
+  background-image: url(c597e5c35f7e30e96cbd.jpg);
+}
+main .our-course .ai-content__info ul li {
+  background: none !important;
+}
+main .our-course .fons {
+  width: 554px;
+  height: 542px;
+  position: relative;
+  left: 150px;
+  background-size: cover;
+  background-image: url(fonts/%D0%91%D0%BB%D0%B8%D0%BA%D0%B8.svg);
 }
