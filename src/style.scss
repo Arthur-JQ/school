@@ -2,6 +2,7 @@
 
 $color: #4ABCEC;
 $colorwhite: #FFFFFF;
+
 .flexbox {
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,7 @@ $colorwhite: #FFFFFF;
     text-decoration-skip-ink: none;
     color: $colorwhite;
 }
+
 * {
     margin: 0;
     font-family: AvenirNextCyr-Demi;
@@ -111,18 +113,16 @@ header {
 }
 
 main {
-    .about-us {
 
+    .about-us {
         position: relative;
         margin-top: 168px;
 
         .about-us__info {
             max-width: 700px;
             width: 100%;
-            // height: 730px;
 
             .about-us__info__welcome {
-
                 font-size: 18px;
                 font-weight: 600;
                 line-height: 22.05px;
@@ -133,7 +133,6 @@ main {
             }
 
             h1 {
-
                 font-size: 108px;
                 font-weight: 600;
                 line-height: 132.3px;
@@ -147,7 +146,6 @@ main {
             }
 
             .about-us__info__web {
-
                 font-size: 18px;
                 font-weight: 450;
                 line-height: 22.05px;
@@ -180,7 +178,6 @@ main {
                     margin-left: 33px;
 
                     h3 {
-
                         font-size: 20px;
                         font-weight: 900;
                         line-height: 22.05px;
@@ -188,11 +185,9 @@ main {
                         text-underline-position: from-font;
                         text-decoration-skip-ink: none;
                         color: $colorwhite;
-
                     }
 
                     p {
-
                         font-size: 18px;
                         font-weight: 450;
                         line-height: 20px;
@@ -201,7 +196,6 @@ main {
                         text-underline-position: from-font;
                         text-decoration-skip-ink: none;
                         color: #4ABCEC;
-
                     }
                 }
             }
@@ -222,7 +216,6 @@ main {
 
                 p {
                     transform: rotate(-90deg);
-
                     font-size: 10px;
                     font-weight: 600;
                     line-height: 12.25px;
@@ -231,12 +224,10 @@ main {
                     text-underline-position: from-font;
                     text-decoration-skip-ink: none;
                     color: #747D81;
-
                 }
 
                 .switch {
                     transform: rotate(-90deg);
-
                     position: relative;
                     display: inline-block;
                     width: 60px;
@@ -355,6 +346,7 @@ main {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: $colorwhite;
+
                 span {
 
                     font-size: 54px;
@@ -620,12 +612,6 @@ main {
             ul {
                 li {
                     background: none !important;
-                    // span {
-                    //     background: #03E1FF87;
-
-                    //     backdrop-filter: blur(11px) !important;
-
-                    // }
                 }
             }
         }
@@ -644,7 +630,9 @@ main {
         max-height: 2182px;
         padding-bottom: 109px;
         height: 100%;
+
         .accordion-single {
+            margin-bottom: 59px;
             max-width: 1200px;
             width: 100%;
             border-radius: 6px;
@@ -718,12 +706,15 @@ main {
                     li {
                         display: flex;
                         margin-top: 49px;
+
                         &:first-child {
                             margin-top: 37px;
                         }
+
                         &:last-child {
                             margin-bottom: 40px;
                         }
+
                         &:before {
                             background-color: #4ABCEC;
                             color: #08262B;
@@ -781,6 +772,48 @@ main {
                         transform: translateY(-50%) rotate(315deg);
                     }
                 }
+            }
+        }
+    }
+
+    .author {
+        background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+        width: 100%;
+        background-image: url('../dist/images/jpg/Автор.jpg');
+        height: 736px;
+        box-shadow: 0 -6px 4px -4px #00E0FF;
+        background-position-y: center;
+        background-size: cover;
+        .author-info {
+            max-width: 500px;
+            margin-left: 0;
+            width: 100%;
+            padding-bottom: 0;
+            h2 {
+                margin: 0 0 107px 12px;
+                padding-top: 107px;
+                font-size: 54px;
+                text-transform: uppercase;
+                font-weight: 450;
+                line-height: 66.15px;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $colorwhite;
+            }
+
+            p {
+                font-size: 17px;
+                font-weight: 450;
+                line-height: 24px;
+                text-align: left;
+                margin-top: 20px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: $colorwhite;
+            }
+            .mt-20 {
+                margin-top: -40px;
             }
         }
     }
