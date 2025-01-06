@@ -26,7 +26,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test.js */ \"./src/test.js\");\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/test.js":
+/*!*********************!*\
+  !*** ./src/test.js ***!
+  \*********************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');\n\naccSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));\n\nfunction toggleAccordion() {\n  const items = document.querySelectorAll('.js-acc-item');\n  const thisItem = this.parentNode;\n\n  items.forEach(item => {\n    if (thisItem == item) {\n      thisItem.classList.toggle('is-open');\n      return;\n    }\n    item.classList.remove('is-open');\n  });\n}\n\n//# sourceURL=webpack:///./src/test.js?");
 
 /***/ })
 

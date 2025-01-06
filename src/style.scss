@@ -1,11 +1,32 @@
 @use '../dist/fonts.scss';
 
+$color: #4ABCEC;
+$colorwhite: #FFFFFF;
 .flexbox {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+
+
+.button-record {
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
+    border: 0;
+    box-shadow: 0px 7px 20px -7px #00E0FF;
+    width: 479px;
+    height: 60px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 750;
+    line-height: 14.7px;
+    letter-spacing: 0.25em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $colorwhite;
+}
 * {
     margin: 0;
     font-family: AvenirNextCyr-Demi;
@@ -13,8 +34,6 @@
     // border: 1px solid rgb(213, 2, 167);
 }
 
-$color: #4ABCEC;
-$colorwhite: #FFFFFF;
 
 .container {
     max-width: 1290px;
@@ -188,28 +207,7 @@ main {
             }
 
             .about-us__info__footer {
-                // margin-bottom: 196px;
                 margin: 101px 0;
-
-                button {
-                    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
-                    border: 0;
-                    box-shadow: 0px 7px 20px -7px #00E0FF;
-                    width: 479px;
-                    height: 60px;
-                    border-radius: 9px;
-
-                    font-size: 12px;
-                    font-weight: 750;
-                    line-height: 14.7px;
-                    letter-spacing: 0.25em;
-                    // margin-top: 101px;
-                    text-align: center;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    color: $colorwhite;
-
-                }
             }
 
             .down {
@@ -357,7 +355,6 @@ main {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: $colorwhite;
-
                 span {
 
                     font-size: 54px;
@@ -501,25 +498,6 @@ main {
                     }
                 }
 
-                a {
-                    width: 479px;
-                    height: 60px;
-                    border-radius: 9px;
-                    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
-                    box-shadow: 0px 7px 20px -7px #00E0FF;
-                    text-decoration: none;
-                    padding: 22px 13px 25px 13px;
-                    color: $colorwhite;
-                    font-size: 12px;
-                    font-weight: 750;
-                    line-height: 14.7px;
-                    letter-spacing: 0.25em;
-                    text-align: center;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    margin-top: 70px;
-
-                }
             }
 
             .ai-content__photo {
@@ -637,6 +615,7 @@ main {
         box-shadow: 0 -6px 4px -4px #00E0FF;
         height: 891px;
         background-image: url('../dist/images/jpg/Фон\ \(1\)\ \(1\).jpg');
+
         .ai-content__info {
             ul {
                 li {
@@ -650,13 +629,159 @@ main {
                 }
             }
         }
+
         .fons {
             width: 554px;
-            height: 542px;     
+            height: 542px;
             position: relative;
             left: 150px;
             background-size: cover;
             background-image: url('../dist/images/svg/Блики.svg');
+        }
+    }
+
+    .contents {
+        max-height: 2182px;
+        padding-bottom: 109px;
+        height: 100%;
+        .accordion-single {
+            max-width: 1200px;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 10px;
+
+            &-title {
+                background: linear-gradient(286.41deg, rgba(2, 35, 53, 0.8) 3.63%, rgba(12, 55, 61, 0.8) 90.98%);
+                padding: 20px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                position: relative;
+                font-size: 20px;
+                margin: 0;
+
+                div {
+                    width: 10px;
+                    border-radius: 50%;
+                    height: 10px;
+                    background: linear-gradient(180deg, #00E0FF 0%, #4A8BEC 100%);
+                    box-shadow: 0px 4px 8px 0px #00E0FF8F;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 750;
+                    line-height: 21px;
+                    text-align: left;
+                    margin-left: 16px;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    color: $colorwhite;
+
+                    span {
+                        font-size: 18px;
+                        font-weight: 450;
+                        margin-left: 5px;
+                        line-height: 21px;
+                        text-align: left;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                        color: $color;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 25px;
+                    top: 50%;
+                    transition: all 0.2s ease-in-out;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    border-top: solid 2px #4ABCEC;
+
+                    border-right: solid 2px #4ABCEC;
+                    transform: translateY(-50%) rotate(135deg);
+                }
+            }
+
+            &-content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+
+                ol {
+                    list-style-type: none;
+                    counter-reset: my-counter;
+
+                    li {
+                        display: flex;
+                        margin-top: 49px;
+                        &:first-child {
+                            margin-top: 37px;
+                        }
+                        &:last-child {
+                            margin-bottom: 40px;
+                        }
+                        &:before {
+                            background-color: #4ABCEC;
+                            color: #08262B;
+                            border-radius: 50%;
+                            width: 27px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 27px;
+                            content: counter(my-counter);
+                            /* Выводим число */
+                            counter-increment: my-counter;
+                            /* Увеличиваем значение счётчика */
+                            margin-right: 0.5em;
+                            /* Расстояние от цифры до текста */
+                        }
+
+                        div {
+                            max-width: 1157px;
+                            width: 100%;
+                            margin-left: 16px;
+
+                            h4 {
+                                font-size: 16px;
+                                font-weight: 750;
+                                line-height: 21px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: $color;
+                            }
+
+                            p {
+                                font-size: 16px;
+                                font-weight: 450;
+                                margin-top: 14px;
+                                line-height: 21px;
+                                text-align: left;
+                                text-underline-position: from-font;
+                                text-decoration-skip-ink: none;
+                                color: $colorwhite;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-item {
+                &.is-open {
+                    .accordion-single-content {
+                        max-height: 100%;
+                    }
+
+                    .accordion-single-title::after {
+                        transform: translateY(-50%) rotate(315deg);
+                    }
+                }
+            }
         }
     }
 }
