@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test.js */ \"./src/test.js\");\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n/* harmony import */ var _test_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./test.js */ \"./src/test.js\");\n/* harmony import */ var _test1_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./test1.js */ \"./src/test1.js\");\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -37,6 +37,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\nconst accSingleTriggers = document.querySelectorAll('.js-acc-single-trigger');\n\naccSingleTriggers.forEach(trigger => trigger.addEventListener('click', toggleAccordion));\n\nfunction toggleAccordion() {\n  const items = document.querySelectorAll('.js-acc-item');\n  const thisItem = this.parentNode;\n\n  items.forEach(item => {\n    if (thisItem == item) {\n      thisItem.classList.toggle('is-open');\n      return;\n    }\n    item.classList.remove('is-open');\n  });\n}\n\n//# sourceURL=webpack:///./src/test.js?");
+
+/***/ }),
+
+/***/ "./src/test1.js":
+/*!**********************!*\
+  !*** ./src/test1.js ***!
+  \**********************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\nconst swiper = new Swiper('.swiper', {\n    // Optional parameters\n    direction: 'horizontal',\n    slidesPerView: 3,\n\n    loop: true,\n  \n    // If we need pagination\n    pagination: {\n      el: '.swiper-pagination',\n    },\n  \n    // Navigation arrows\n    navigation: {\n      nextEl: '.swiper-button-next',\n      prevEl: '.swiper-button-prev',\n    },\n  \n    // And if we need scrollbar\n    scrollbar: {\n      el: '.swiper-scrollbar',\n    },\n  });\n\n//# sourceURL=webpack:///./src/test1.js?");
 
 /***/ })
 

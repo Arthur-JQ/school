@@ -88,6 +88,11 @@
   align-items: center;
 }
 
+.swiper {
+  width: 100%;
+  height: 400px;
+}
+
 .button-record {
   background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
   border: 0;
@@ -95,10 +100,10 @@
   width: 479px;
   height: 60px;
   border-radius: 9px;
-  font-size: 12px;
+  font-size: 17px;
   font-weight: 750;
   line-height: 14.7px;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.1em;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -430,6 +435,7 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div p 
 main .ai {
   width: 100%;
   background-size: cover;
+  box-shadow: 0 -6px 4px -4px #00E0FF;
   height: 913px;
   background-color: black;
   background-position-y: -120px;
@@ -438,7 +444,6 @@ main .ai {
   background-image: url(723bc445751e4867c69b.png);
 }
 main .ai .ai-content {
-  box-shadow: 0 -6px 4px -4px #00E0FF;
   opacity: 1;
 }
 main .ai .ai-content .ai-content__info h2 {
@@ -624,6 +629,7 @@ main .contents .accordion-single-title h3 {
   font-size: 20px;
   font-weight: 750;
   line-height: 21px;
+  text-transform: uppercase;
   text-align: left;
   margin-left: 16px;
   text-underline-position: from-font;
@@ -682,11 +688,8 @@ main .contents .accordion-single-content ol li:before {
   align-items: center;
   height: 27px;
   content: counter(my-counter);
-  /* Выводим число */
   counter-increment: my-counter;
-  /* Увеличиваем значение счётчика */
   margin-right: 0.5em;
-  /* Расстояние от цифры до текста */
 }
 main .contents .accordion-single-content ol li div {
   max-width: 1157px;
@@ -722,7 +725,7 @@ main .author {
   background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
   width: 100%;
   background-image: url(200d84bbb089dd5a2afb.jpg);
-  height: 736px;
+  height: 760px;
   box-shadow: 0 -6px 4px -4px #00E0FF;
   background-position-y: center;
   background-size: cover;
@@ -757,4 +760,99 @@ main .author .author-info p {
 }
 main .author .author-info .mt-20 {
   margin-top: -40px;
+}
+main .advertisements {
+  background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+  width: 100%;
+  height: 670px;
+  box-shadow: 0 -6px 4px -4px #00E0FF;
+}
+main .advertisements .advertisements-head {
+  padding-top: 80px;
+}
+main .advertisements .advertisements-head h2 {
+  font-size: 54px;
+  font-weight: 450;
+  line-height: 66.15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+main .advertisements .advertisements-head button {
+  color: #4ABCEC;
+  background-color: rgba(255, 0, 0, 0);
+  font-family: Avenir Next Cyr;
+  font-size: 12px;
+  font-weight: 750;
+  line-height: 14.7px;
+  padding: 22px 15px;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: 1px solid #00E0FF;
+  border-radius: 9px;
+  transition: 0.4s;
+}
+main .advertisements .advertisements-head button:hover {
+  box-shadow: 0px 7px 20px -7px rgba(0, 225, 255, 0.6196078431);
+}
+main .advertisements .advertisements-main {
+  margin-top: 100px;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item {
+  max-width: 450px;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item .advertisements-main__item__photo {
+  max-width: 400px;
+  width: 100%;
+  height: 256px;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item .advertisements-main__item__photo img {
+  max-width: 387px;
+  width: 100%;
+  position: absolute;
+  height: 236px;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item .advertisements-main__item__photo span {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  top: 15px;
+  position: relative;
+  left: 290px;
+  text-align: right;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item h3 {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item p {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 21px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item a {
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 21px;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4ABCEC;
 }
