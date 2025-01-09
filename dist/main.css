@@ -764,7 +764,7 @@ main .author .author-info .mt-20 {
 main .advertisements {
   background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
   width: 100%;
-  height: 670px;
+  height: 755px;
   box-shadow: 0 -6px 4px -4px #00E0FF;
 }
 main .advertisements .advertisements-head {
@@ -855,4 +855,82 @@ main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide 
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #4ABCEC;
+}
+
+footer {
+  width: 100%;
+  height: 284px;
+  background: linear-gradient(286.41deg, #022335 3.63%, #043A41 90.98%);
+  box-shadow: 0 -6px 4px -4px #00E0FF;
+}
+footer .footer-head {
+  padding-top: 65px;
+}
+footer .footer-head .logo .logo-text .logo-name {
+  font-size: 18px;
+  font-weight: 750;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #4ABCEC;
+}
+footer .footer-head .logo .logo-text .logo-desc {
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 22.05px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+}
+footer .footer-head .me-contact {
+  width: 460px;
+}
+footer .footer-head .me-contact a {
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 22.05px;
+  text-align: right;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+footer .footer-head .me-contact .me-contact__email {
+  color: #4ABCEC;
+  width: 220px;
+}
+footer .footer-head .me-contact .me-contact__email img {
+  width: 25px;
+  height: 18px;
+}
+footer .footer-head .me-contact .me-contact__tel {
+  width: 200px;
+  color: #FFFFFF;
+}
+footer .footer-head .me-contact .me-contact__tel img {
+  width: 25px;
+  height: 25px;
+}
+footer .footer-head .social-networks {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+  align-items: center;
+  width: 462px;
+}
+footer .footer-head .social-networks span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.12em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #747D81;
+}
+footer .footer-head .social-networks * {
+  margin-left: 16px;
 }
