@@ -387,12 +387,23 @@ main .advantages .advantages-main h2 span {
   color: rgb(74, 188, 236);
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
+  position: relative;
   background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
   width: 240px;
   height: 212px;
   border-radius: 20px;
   border: 2px solid rgba(73, 184, 232, 0.2901960784) !important;
   padding-left: 45px;
+}
+main .advantages .advantages-main .advantages-card .advantages-card__row1 div::after {
+  transition: all 0.6s ease;
+  content: "";
+  position: absolute;
+  background-image: url(fonts/blur.svg);
+  width: 65px;
+  height: 28px;
+  bottom: -10px;
+  margin-left: -10px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div img {
   margin-top: 39px;
