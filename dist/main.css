@@ -396,14 +396,18 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
   padding-left: 45px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div::after {
-  transition: all 0.6s ease;
+  transition: all 0.9s ease;
   content: "";
   position: absolute;
   background-image: url(fonts/blur.svg);
   width: 65px;
-  height: 28px;
-  bottom: -10px;
-  margin-left: -10px;
+  height: 30px;
+  bottom: -14px;
+  margin-left: 10px;
+  left: 0; /* Начальное значение left */
+}
+main .advantages .advantages-main .advantages-card .advantages-card__row1 div:hover::after {
+  left: 170px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div img {
   margin-top: 39px;
@@ -419,16 +423,31 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div p 
   margin-top: 15px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div {
   max-width: 342px;
   width: 100%;
+  position: relative;
   height: 217px;
   background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
   border-radius: 20px;
   border: 2px solid rgba(73, 184, 232, 0.2901960784) !important;
   padding-left: 45px;
+}
+main .advantages .advantages-main .advantages-card .advantages-card__row2 div::after {
+  transition: all 0.9s ease;
+  content: "";
+  position: absolute;
+  background-image: url(fonts/blur.svg);
+  width: 65px;
+  height: 30px;
+  bottom: -14px;
+  margin-left: 10px;
+  left: 0; /* Начальное значение left */
+}
+main .advantages .advantages-main .advantages-card .advantages-card__row2 div:hover::after {
+  left: 250px;
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div img {
   margin-top: 39px;
