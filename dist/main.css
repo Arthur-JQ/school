@@ -113,6 +113,12 @@ h2 span {
   color: rgb(74, 188, 236);
 }
 @media screen and (max-width: 1200px) {
+  h2 span {
+    font-size: 30px !important;
+    line-height: 36.15px;
+  }
+}
+@media screen and (max-width: 1200px) {
   h2 {
     font-size: 30px !important;
     line-height: 36.15px;
@@ -148,6 +154,11 @@ h2 span {
   font-family: AvenirNextCyr-Demi;
   text-wrap: pretty;
 }
+@media screen and (max-width: 930px) {
+  * {
+    border: 1px solid rgb(213, 2, 167);
+  }
+}
 
 .container {
   max-width: 1290px;
@@ -158,6 +169,11 @@ h2 span {
 @media screen and (max-width: 1400px) {
   .container {
     padding: 0 200px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 100px;
   }
 }
 .background {
@@ -256,6 +272,13 @@ main .about-us .about-us__info h1 {
     font-size: 80px;
   }
 }
+@media screen and (max-width: 880px) {
+  main .about-us .about-us__info h1 {
+    align-items: center;
+    height: 80px;
+    display: flex;
+  }
+}
 main .about-us .about-us__info .about-us__info__web {
   font-size: 18px;
   font-weight: 450;
@@ -270,8 +293,10 @@ main .about-us .about-us__info .about-us__info__web {
     font-size: 15px;
   }
 }
-main .about-us .about-us__info .about-us__info__guarantee {
-  display: flex;
+@media screen and (max-width: 1030px) {
+  main .about-us .about-us__info .about-us__info__web {
+    display: none;
+  }
 }
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__certificate {
   width: 71px;
@@ -286,6 +311,8 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
 }
 main .about-us .about-us__info .about-us__info__guarantee {
   margin-top: 77px;
+  display: flex;
+  justify-content: flex-start;
 }
 @media screen and (max-width: 1550px) {
   main .about-us .about-us__info .about-us__info__guarantee {
@@ -297,8 +324,18 @@ main .about-us .about-us__info .about-us__info__guarantee {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 950px) {
+  main .about-us .about-us__info .about-us__info__guarantee {
+    margin-top: 0;
+  }
+}
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text {
   margin-left: 33px;
+}
+@media screen and (max-width: 1550px) {
+  main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text {
+    width: 60%;
+  }
 }
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text h3 {
   font-size: 20px;
@@ -347,6 +384,11 @@ main .about-us .about-us__info .about-us__info__footer {
     margin: 20px 0 50px 0;
   }
 }
+@media screen and (max-width: 950px) {
+  main .about-us .about-us__info .about-us__info__footer {
+    margin: 10px 0 25px 0;
+  }
+}
 main .about-us .about-us__info .down {
   position: absolute;
   top: 410px;
@@ -375,6 +417,18 @@ main .about-us .about-us__info .down {
     left: 650px;
   }
 }
+@media screen and (max-width: 950px) {
+  main .about-us .about-us__info .down {
+    top: 80px;
+    left: 550px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 880px) {
+  main .about-us .about-us__info .down {
+    top: 20px;
+  }
+}
 main .about-us .about-us__info .down p {
   transform: rotate(-90deg);
   font-size: 10px;
@@ -385,6 +439,7 @@ main .about-us .about-us__info .down p {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #747D81;
+  white-space: nowrap;
 }
 main .about-us .about-us__info .down .switch {
   transform: rotate(-90deg);
@@ -451,6 +506,18 @@ main .consultation {
     left: 0;
   }
 }
+@media screen and (max-width: 1200px) {
+  main .consultation {
+    left: -60px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main .consultation {
+    justify-content: space-around;
+    height: 300px;
+    top: 50px;
+  }
+}
 main .consultation .consultation-ikon {
   width: 100px;
   height: 100px;
@@ -460,6 +527,12 @@ main .consultation .consultation-ikon {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 950px) {
+  main .consultation .consultation-ikon {
+    width: 50px;
+    height: 50px;
+  }
 }
 main .consultation p {
   font-size: 10px;
@@ -474,7 +547,8 @@ main .consultation p {
 }
 main .advantages {
   width: 100%;
-  height: 800px;
+  height: 100%;
+  padding-bottom: 100px;
   background: linear-gradient(286.41deg, rgb(2, 35, 53) 3.63%, rgb(12, 55, 61) 90.98%);
   box-shadow: 0 -6px 4px -4px #00E0FF;
 }
@@ -512,6 +586,12 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
     font-size: 13px !important;
   }
 }
+@media (max-width: 880px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div::after {
   transition: all 0.9s ease;
   content: "";
@@ -524,6 +604,9 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div::a
   left: 0;
   /* Начальное значение left */
 }
+main .advantages .advantages-main .advantages-card .advantages-card__row1 div:hover::after {
+  left: 150px;
+}
 @media (max-width: 1740px) {
   main .advantages .advantages-main .advantages-card .advantages-card__row1 div:hover::after {
     left: 70px;
@@ -531,6 +614,11 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div::a
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div img {
   margin-top: 39px;
+}
+@media (max-width: 880px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div img {
+    margin-top: 10px;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div p {
   font-size: 15px;
@@ -541,6 +629,12 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div p 
   text-decoration-skip-ink: none;
   color: #FFFFFF;
   margin-top: 15px;
+}
+@media (max-width: 880px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div p {
+    margin-top: 10px;
+    font-size: 11px;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 {
   margin-top: 35px;
@@ -585,6 +679,11 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div:ho
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div img {
   margin-top: 39px;
 }
+@media (max-width: 880px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row2 div img {
+    margin-top: 10px;
+  }
+}
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div p {
   font-size: 15px;
   font-weight: 450;
@@ -594,6 +693,12 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div p 
   text-decoration-skip-ink: none;
   color: #FFFFFF;
   margin-top: 15px;
+}
+@media (max-width: 880px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row2 div p {
+    font-size: 11px;
+    margin-top: 10px;
+  }
 }
 main .ai {
   width: 100%;
@@ -676,10 +781,22 @@ main .important {
   opacity: 0px !important;
   background: linear-gradient(286.41deg, rgb(1, 25, 37) 3.63%, rgb(12, 61, 68) 90.98%);
 }
+@media screen and (max-width: 1000px) {
+  main .important {
+    height: 840px;
+  }
+}
 main .important .important-title h2 {
   padding-top: 117px;
   margin-bottom: 64px;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1000px) {
+  main .important .important-title h2 {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 main .important .mt46 {
   margin-top: 46px;
@@ -687,6 +804,11 @@ main .important .mt46 {
 main .important .important-row1 .important-row1__item {
   max-width: 568px;
   width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  main .important .important-row1 .important-row1__item {
+    flex-direction: column;
+  }
 }
 main .important .important-row1 .important-row1__item * {
   transition: 0.8s;
@@ -731,6 +853,18 @@ main .important .important-row1 .important-row1__item p {
   max-width: 250px;
   width: 100%;
 }
+@media screen and (max-width: 1000px) {
+  main .important .important-row1 .important-row1__item p {
+    margin-top: 20px;
+    margin-left: 0;
+    max-width: 270px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .important .important-row1 .important-row1__column {
+    flex-direction: column-reverse;
+  }
+}
 main .our-course {
   padding-bottom: 110px;
   width: 100%;
@@ -747,18 +881,15 @@ main .our-course {
 main .our-course .ai-content__info ul li {
   background: none !important;
 }
-main .our-course .fons {
-  width: 554px;
-  height: 542px;
-  position: relative;
-  left: 150px;
-  background-size: cover;
-  background-image: url(fonts/%D0%91%D0%BB%D0%B8%D0%BA%D0%B8.svg);
-}
 main .contents {
   max-height: 2182px;
   padding-bottom: 109px;
   height: 100%;
+}
+@media screen and (max-width: 1200px) {
+  main .contents {
+    padding-bottom: 50px;
+  }
 }
 main .contents .accordion-single {
   margin-bottom: 59px;
@@ -889,6 +1020,11 @@ main .author {
   background-position-y: center;
   background-size: cover;
 }
+@media screen and (max-width: 1200px) {
+  main .author {
+    background-position-x: center;
+  }
+}
 main .author .author-info {
   max-width: 500px;
   margin-left: 0;
@@ -943,11 +1079,14 @@ main .advertisements .advertisements-head button:hover {
 main .advertisements .advertisements-main {
   margin-top: 100px;
 }
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide {
+  margin: 0 10px;
+}
 main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item {
   max-width: 450px;
 }
 main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item .advertisements-main__item__photo {
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
   height: 256px;
 }
@@ -968,6 +1107,9 @@ main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide 
   text-align: right;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item .advertisements-main__item__photo span:first-child {
+  left: -101px;
 }
 main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide .advertisements-main__item h3 {
   color: #FFFFFF;
@@ -1008,6 +1150,11 @@ footer {
 footer .footer-head {
   padding-top: 65px;
 }
+@media screen and (max-width: 820px) {
+  footer .footer-head {
+    display: block;
+  }
+}
 footer .footer-head .logo .logo-text {
   margin-left: 20px;
 }
@@ -1029,10 +1176,17 @@ footer .footer-head .logo .logo-text .logo-desc {
   text-decoration-skip-ink: none;
   color: white;
 }
-footer .footer-head .me-contact {
+@media screen and (max-width: 820px) {
+  footer .footer-head .me {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+footer .footer-head .me .me-contact {
   width: 460px;
 }
-footer .footer-head .me-contact a {
+footer .footer-head .me .me-contact a {
   font-size: 18px;
   font-weight: 450;
   line-height: 22.05px;
@@ -1042,19 +1196,19 @@ footer .footer-head .me-contact a {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-footer .footer-head .me-contact .me-contact__email {
+footer .footer-head .me .me-contact .me-contact__email {
   color: #4ABCEC;
   width: 220px;
 }
-footer .footer-head .me-contact .me-contact__email img {
+footer .footer-head .me .me-contact .me-contact__email img {
   width: 25px;
   height: 18px;
 }
-footer .footer-head .me-contact .me-contact__tel {
+footer .footer-head .me .me-contact .me-contact__tel {
   width: 200px;
   color: #FFFFFF;
 }
-footer .footer-head .me-contact .me-contact__tel img {
+footer .footer-head .me .me-contact .me-contact__tel img {
   width: 25px;
   height: 25px;
 }
