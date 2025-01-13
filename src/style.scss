@@ -13,7 +13,29 @@ $colorwhite: #FFFFFF;
     width: 100%;
     height: 400px;
 }
-
+h2 {
+    font-size: 54px;
+    font-weight: 450;
+    line-height: 66.15px;
+    text-align: left;
+    text-transform: uppercase;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: $colorwhite;
+    span {
+        font-size: 54px;
+        font-weight: 450;
+        line-height: 66.15px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: rgb(74, 188, 236);
+    }
+    @media screen and (max-width: 1200px) {
+        font-size: 30px !important;
+        line-height: 36.15px;
+    }
+}
 
 .button-record {
     background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
@@ -30,6 +52,12 @@ $colorwhite: #FFFFFF;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $colorwhite;
+
+    @media screen and (max-width: 1300px) {
+        width: 420px;
+        height: 55px;
+        font-style: 15px;
+    }
 }
 
 * {
@@ -42,14 +70,18 @@ $colorwhite: #FFFFFF;
 
 .container {
     max-width: 1290px;
-    // width: 100%;
     padding: 0 300px;
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1400px) {
+    .container {
+        padding: 0 200px;
+    }
+}
+
 .background {
     background-size: 100%;
-    height: 1500px;
     background-image: url('../dist/images/jpg/fon.jpg');
 }
 
@@ -121,6 +153,14 @@ main {
         position: relative;
         margin-top: 168px;
 
+        @media screen and (max-width: 1550px) {
+            margin-top: 60px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            margin-top: 20px;
+        }
+
         .about-us__info {
             max-width: 700px;
             width: 100%;
@@ -146,6 +186,11 @@ main {
                 background: -webkit-linear-gradient(#FFFFFF, #1A3031);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
+
+                @media screen and (max-width: 1300px) {
+                    margin: 0;
+                    font-size: 80px;
+                }
             }
 
             .about-us__info__web {
@@ -156,6 +201,10 @@ main {
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
                 color: $colorwhite;
+
+                @media screen and (max-width: 1300px) {
+                    font-size: 15px;
+                }
             }
 
             .about-us__info__guarantee {
@@ -177,6 +226,14 @@ main {
             .about-us__info__guarantee {
                 margin-top: 77px;
 
+                @media screen and (max-width: 1550px) {
+                    margin-top: 50px;
+                }
+
+                @media screen and (max-width: 1550px) {
+                    margin-top: 20px;
+                }
+
                 .about-us__info__guarantee__text {
                     margin-left: 33px;
 
@@ -188,6 +245,10 @@ main {
                         text-underline-position: from-font;
                         text-decoration-skip-ink: none;
                         color: $colorwhite;
+
+                        @media screen and (max-width: 1300px) {
+                            font-size: 15px;
+                        }
                     }
 
                     p {
@@ -199,12 +260,28 @@ main {
                         text-underline-position: from-font;
                         text-decoration-skip-ink: none;
                         color: #4ABCEC;
+
+                        @media screen and (max-width: 1300px) {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
 
             .about-us__info__footer {
                 margin: 101px 0;
+
+                @media screen and (max-width: 1740px) {
+                    margin: 101px 0 50px 0;
+                }
+
+                @media screen and (max-width: 1640px) {
+                    margin: 50px 0 50px 0;
+                }
+
+                @media screen and (max-width: 1300px) {
+                    margin: 20px 0 50px 0;
+                }
             }
 
             .down {
@@ -216,6 +293,21 @@ main {
                 height: 150px;
                 align-items: center;
                 justify-content: space-between;
+
+                @media screen and (max-width: 1740px) {
+                    top: 350px;
+                    left: 730px;
+                }
+
+                @media screen and (max-width: 1450px) {
+                    top: 300px;
+                    left: 730px;
+                }
+
+                @media screen and (max-width: 1300px) {
+                    top: 200px;
+                    left: 650px;
+                }
 
                 p {
                     transform: rotate(-90deg);
@@ -301,6 +393,10 @@ main {
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 1400px) {
+            left: 0;
+        }
+
         .consultation-ikon {
             width: 100px;
             height: 100px;
@@ -340,26 +436,9 @@ main {
 
             h2 {
 
-                font-size: 54px;
-                font-weight: 450;
                 text-align: center !important;
-                line-height: 66.15px;
-                text-align: left;
                 margin-bottom: 58px;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: $colorwhite;
 
-                span {
-
-                    font-size: 54px;
-                    font-weight: 450;
-                    line-height: 66.15px;
-                    text-align: left;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    color: rgb(74, 188, 236);
-                }
             }
 
             .advantages-card {
@@ -367,11 +446,28 @@ main {
                     div {
                         position: relative;
                         background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
-                        width: 240px;
+                        max-width: 240px;
+                        width: 100%;
                         height: 212px;
                         border-radius: 20px;
                         border: 2px solid #49b8e84a !important;
-                        padding-left: 45px;
+                        padding-left: 30px;
+                        padding-right: 15px;
+
+                        @media (max-width: 1740px) {
+                            max-width: 180px;
+                            padding-left: 20px;
+                        }
+
+                        @media (max-width: 1440px) {
+                            max-width: 170px;
+                            padding-left: 10px;
+
+                            * {
+                                font-size: 13px !important;
+                            }
+                        }
+
                         &::after {
                             transition: all 0.9s ease;
                             content: "";
@@ -381,13 +477,16 @@ main {
                             height: 30px;
                             bottom: -14px;
                             margin-left: 10px;
-                            
-                            left: 0; /* Начальное значение left */
+
+                            left: 0;
+                            /* Начальное значение left */
                         }
-                        
-                        &:hover{
-                            &::after{
-                                left: 170px;
+
+                        &:hover {
+                            &::after {
+                                @media (max-width: 1740px) {
+                                    left: 70px;
+                                }
                             }
                         }
 
@@ -420,7 +519,14 @@ main {
                         background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
                         border-radius: 20px;
                         border: 2px solid #49b8e84a !important;
-                        padding-left: 45px;
+                        padding-left: 30px;
+                        padding-right: 15px;
+
+                        @media (max-width: 1740px) {
+                            max-width: 250px;
+                            padding-left: 20px;
+                        }
+
                         &::after {
                             transition: all 0.9s ease;
                             content: "";
@@ -430,14 +536,20 @@ main {
                             height: 30px;
                             bottom: -14px;
                             margin-left: 10px;
-                            left: 0; /* Начальное значение left */
+                            left: 0;
+                            /* Начальное значение left */
                         }
-                        
-                        &:hover{
-                            &::after{
+
+                        &:hover {
+                            &::after {
                                 left: 250px;
+
+                                @media (max-width: 1740px) {
+                                    left: 150px;
+                                }
                             }
                         }
+
                         img {
                             margin-top: 39px;
                         }
@@ -469,6 +581,10 @@ main {
         background-attachment: fixed;
         box-shadow: 0px 0px 110px 14px #000000 inset;
         background-image: url('../dist/images/png/ai_artificial_intelligence_ml_machine_learning_vector_by_kohb_gettyimages_1146634284-100817775-large\ 1.png');
+        @media screen and (max-width: 1200px) {
+            height: 613px;
+
+        }
 
         .ai-content {
             opacity: 1;
@@ -477,30 +593,24 @@ main {
                 h2 {
                     padding-top: 117px;
                     margin-bottom: 64px;
-                    font-size: 54px;
-                    font-weight: 450;
-                    line-height: 66.15px;
-                    text-align: left;
-                    text-transform: uppercase;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
                     color: $colorwhite;
 
-                    span {
-                        font-size: 54px;
-                        font-weight: 450;
-                        line-height: 66.15px;
-                        text-align: left;
-                        text-underline-position: from-font;
-                        text-decoration-skip-ink: none;
-                        color: rgb(74, 188, 236);
+                    @media screen and (max-width: 1200px) {
+                        font-size: 30px ;
+                        line-height: 36.15px;
+                        margin-bottom: 34px;
+                        padding-top: 50px;
                     }
+
+                    
                 }
 
                 ul {
                     padding: 0;
                     margin-bottom: 69px;
-
+                    @media screen and (max-width: 1200px) {
+                        margin-bottom: 40px;
+                    }
                     li {
                         list-style: none;
                         display: flex;
@@ -522,6 +632,10 @@ main {
                             color: $colorwhite;
                             display: flex;
                             align-items: center;
+                            @media screen and (max-width: 1200px) {
+                                font-size: 14px;
+
+                            }
                         }
                     }
                 }
@@ -548,24 +662,8 @@ main {
             h2 {
                 padding-top: 117px;
                 margin-bottom: 64px;
-                font-size: 54px;
-                font-weight: 450;
-                line-height: 66.15px;
-                text-align: left;
-                text-transform: uppercase;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
                 color: $colorwhite;
 
-                span {
-                    font-size: 54px;
-                    font-weight: 450;
-                    line-height: 66.15px;
-                    text-align: left;
-                    text-underline-position: from-font;
-                    text-decoration-skip-ink: none;
-                    color: rgb(74, 188, 236);
-                }
             }
         }
 
@@ -643,8 +741,11 @@ main {
         box-shadow: 0 -6px 4px -4px #00E0FF;
         height: 891px;
         background-image: url('../dist/images/jpg/Фон\ \(1\)\ \(1\).jpg');
-
+        @media screen and (max-width: 1200px) {
+            height: 600px;
+        }
         .ai-content__info {
+
             ul {
                 li {
                     background: none !important;
@@ -827,14 +928,6 @@ main {
             h2 {
                 margin: 0 0 107px 12px;
                 padding-top: 107px;
-                font-size: 54px;
-                text-transform: uppercase;
-                font-weight: 450;
-                line-height: 66.15px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: $colorwhite;
             }
 
             p {
@@ -865,17 +958,6 @@ main {
 
         .advertisements-head {
             padding-top: 80px;
-
-            h2 {
-                font-size: 54px;
-                font-weight: 450;
-                line-height: 66.15px;
-                text-align: left;
-                text-underline-position: from-font;
-                text-decoration-skip-ink: none;
-                color: $colorwhite;
-            }
-
             button {
                 color: $color;
                 background-color: rgba(255, 0, 0, 0);
@@ -986,6 +1068,8 @@ footer {
 
         .logo {
             .logo-text {
+                margin-left: 20px;
+
                 .logo-name {
                     font-size: 18px;
                     font-weight: 750;

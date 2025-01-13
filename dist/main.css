@@ -93,6 +93,32 @@
   height: 400px;
 }
 
+h2 {
+  font-size: 54px;
+  font-weight: 450;
+  line-height: 66.15px;
+  text-align: left;
+  text-transform: uppercase;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFF;
+}
+h2 span {
+  font-size: 54px;
+  font-weight: 450;
+  line-height: 66.15px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgb(74, 188, 236);
+}
+@media screen and (max-width: 1200px) {
+  h2 {
+    font-size: 30px !important;
+    line-height: 36.15px;
+  }
+}
+
 .button-record {
   background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
   border: 0;
@@ -109,6 +135,13 @@
   text-decoration-skip-ink: none;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1300px) {
+  .button-record {
+    width: 420px;
+    height: 55px;
+    font-style: 15px;
+  }
+}
 
 * {
   margin: 0;
@@ -122,9 +155,13 @@
   margin: 0 auto;
 }
 
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0 200px;
+  }
+}
 .background {
   background-size: 100%;
-  height: 1500px;
   background-image: url(f264b67022a0149a6f53.jpg);
 }
 
@@ -178,6 +215,16 @@ main .about-us {
   position: relative;
   margin-top: 168px;
 }
+@media screen and (max-width: 1550px) {
+  main .about-us {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main .about-us {
+    margin-top: 20px;
+  }
+}
 main .about-us .about-us__info {
   max-width: 700px;
   width: 100%;
@@ -203,6 +250,12 @@ main .about-us .about-us__info h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info h1 {
+    margin: 0;
+    font-size: 80px;
+  }
+}
 main .about-us .about-us__info .about-us__info__web {
   font-size: 18px;
   font-weight: 450;
@@ -211,6 +264,11 @@ main .about-us .about-us__info .about-us__info__web {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info .about-us__info__web {
+    font-size: 15px;
+  }
 }
 main .about-us .about-us__info .about-us__info__guarantee {
   display: flex;
@@ -229,6 +287,16 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
 main .about-us .about-us__info .about-us__info__guarantee {
   margin-top: 77px;
 }
+@media screen and (max-width: 1550px) {
+  main .about-us .about-us__info .about-us__info__guarantee {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1550px) {
+  main .about-us .about-us__info .about-us__info__guarantee {
+    margin-top: 20px;
+  }
+}
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text {
   margin-left: 33px;
 }
@@ -241,6 +309,11 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
   text-decoration-skip-ink: none;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text h3 {
+    font-size: 15px;
+  }
+}
 main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text p {
   font-size: 18px;
   font-weight: 450;
@@ -251,8 +324,28 @@ main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guara
   text-decoration-skip-ink: none;
   color: #4ABCEC;
 }
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__text p {
+    font-size: 14px;
+  }
+}
 main .about-us .about-us__info .about-us__info__footer {
   margin: 101px 0;
+}
+@media screen and (max-width: 1740px) {
+  main .about-us .about-us__info .about-us__info__footer {
+    margin: 101px 0 50px 0;
+  }
+}
+@media screen and (max-width: 1640px) {
+  main .about-us .about-us__info .about-us__info__footer {
+    margin: 50px 0 50px 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info .about-us__info__footer {
+    margin: 20px 0 50px 0;
+  }
 }
 main .about-us .about-us__info .down {
   position: absolute;
@@ -263,6 +356,24 @@ main .about-us .about-us__info .down {
   height: 150px;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 1740px) {
+  main .about-us .about-us__info .down {
+    top: 350px;
+    left: 730px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  main .about-us .about-us__info .down {
+    top: 300px;
+    left: 730px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  main .about-us .about-us__info .down {
+    top: 200px;
+    left: 650px;
+  }
 }
 main .about-us .about-us__info .down p {
   transform: rotate(-90deg);
@@ -335,6 +446,11 @@ main .consultation {
   align-items: center;
   justify-content: space-between;
 }
+@media screen and (max-width: 1400px) {
+  main .consultation {
+    left: 0;
+  }
+}
 main .consultation .consultation-ikon {
   width: 100px;
   height: 100px;
@@ -367,33 +483,34 @@ main .advantages .advantages-main {
   padding-top: 124px;
 }
 main .advantages .advantages-main h2 {
-  font-size: 54px;
-  font-weight: 450;
   text-align: center !important;
-  line-height: 66.15px;
-  text-align: left;
   margin-bottom: 58px;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #FFFFFF;
-}
-main .advantages .advantages-main h2 span {
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: rgb(74, 188, 236);
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
   position: relative;
   background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
   height: 212px;
   border-radius: 20px;
   border: 2px solid rgba(73, 184, 232, 0.2901960784) !important;
-  padding-left: 45px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+@media (max-width: 1740px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
+    max-width: 180px;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 1440px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
+    max-width: 170px;
+    padding-left: 10px;
+  }
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div * {
+    font-size: 13px !important;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div::after {
   transition: all 0.9s ease;
@@ -404,10 +521,13 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div::a
   height: 30px;
   bottom: -14px;
   margin-left: 10px;
-  left: 0; /* Начальное значение left */
+  left: 0;
+  /* Начальное значение left */
 }
-main .advantages .advantages-main .advantages-card .advantages-card__row1 div:hover::after {
-  left: 170px;
+@media (max-width: 1740px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div:hover::after {
+    left: 70px;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div img {
   margin-top: 39px;
@@ -433,7 +553,14 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div {
   background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.0539) 100%);
   border-radius: 20px;
   border: 2px solid rgba(73, 184, 232, 0.2901960784) !important;
-  padding-left: 45px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+@media (max-width: 1740px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row2 div {
+    max-width: 250px;
+    padding-left: 20px;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div::after {
   transition: all 0.9s ease;
@@ -444,10 +571,16 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div::a
   height: 30px;
   bottom: -14px;
   margin-left: 10px;
-  left: 0; /* Начальное значение left */
+  left: 0;
+  /* Начальное значение left */
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div:hover::after {
   left: 250px;
+}
+@media (max-width: 1740px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row2 div:hover::after {
+    left: 150px;
+  }
 }
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div img {
   margin-top: 39px;
@@ -473,33 +606,35 @@ main .ai {
   box-shadow: 0px 0px 110px 14px #000000 inset;
   background-image: url(723bc445751e4867c69b.png);
 }
+@media screen and (max-width: 1200px) {
+  main .ai {
+    height: 613px;
+  }
+}
 main .ai .ai-content {
   opacity: 1;
 }
 main .ai .ai-content .ai-content__info h2 {
   padding-top: 117px;
   margin-bottom: 64px;
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-transform: uppercase;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #FFFFFF;
 }
-main .ai .ai-content .ai-content__info h2 span {
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: rgb(74, 188, 236);
+@media screen and (max-width: 1200px) {
+  main .ai .ai-content .ai-content__info h2 {
+    font-size: 30px;
+    line-height: 36.15px;
+    margin-bottom: 34px;
+    padding-top: 50px;
+  }
 }
 main .ai .ai-content .ai-content__info ul {
   padding: 0;
   margin-bottom: 69px;
+}
+@media screen and (max-width: 1200px) {
+  main .ai .ai-content .ai-content__info ul {
+    margin-bottom: 40px;
+  }
 }
 main .ai .ai-content .ai-content__info ul li {
   list-style: none;
@@ -523,6 +658,11 @@ main .ai .ai-content .ai-content__info ul li p {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  main .ai .ai-content .ai-content__info ul li p {
+    font-size: 14px;
+  }
+}
 main .ai .ai-content .ai-content__photo {
   width: 937px;
   height: 625px;
@@ -539,23 +679,7 @@ main .important {
 main .important .important-title h2 {
   padding-top: 117px;
   margin-bottom: 64px;
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-transform: uppercase;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   color: #FFFFFF;
-}
-main .important .important-title h2 span {
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: rgb(74, 188, 236);
 }
 main .important .mt46 {
   margin-top: 46px;
@@ -614,6 +738,11 @@ main .our-course {
   box-shadow: 0 -6px 4px -4px #00E0FF;
   height: 891px;
   background-image: url(c597e5c35f7e30e96cbd.jpg);
+}
+@media screen and (max-width: 1200px) {
+  main .our-course {
+    height: 600px;
+  }
 }
 main .our-course .ai-content__info ul li {
   background: none !important;
@@ -769,14 +898,6 @@ main .author .author-info {
 main .author .author-info h2 {
   margin: 0 0 107px 12px;
   padding-top: 107px;
-  font-size: 54px;
-  text-transform: uppercase;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #FFFFFF;
 }
 main .author .author-info p {
   font-size: 17px;
@@ -799,15 +920,6 @@ main .advertisements {
 }
 main .advertisements .advertisements-head {
   padding-top: 80px;
-}
-main .advertisements .advertisements-head h2 {
-  font-size: 54px;
-  font-weight: 450;
-  line-height: 66.15px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #FFFFFF;
 }
 main .advertisements .advertisements-head button {
   color: #4ABCEC;
@@ -895,6 +1007,9 @@ footer {
 }
 footer .footer-head {
   padding-top: 65px;
+}
+footer .footer-head .logo .logo-text {
+  margin-left: 20px;
 }
 footer .footer-head .logo .logo-text .logo-name {
   font-size: 18px;
