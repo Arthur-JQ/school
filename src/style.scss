@@ -51,7 +51,6 @@ h2 {
 .button-record {
     background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13CDC2 100%);
     border: 0;
-    box-shadow: 0px 7px 20px -7px #00E0FF;
     width: 479px;
     height: 60px;
     border-radius: 9px;
@@ -63,7 +62,10 @@ h2 {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: $colorwhite;
-
+    transition: 0.4s;
+    &:hover {
+        box-shadow: 0px 7px 20px -7px #00E0FF;
+    }
     @media screen and (max-width: 1300px) {
         width: 420px;
         height: 55px;
@@ -82,10 +84,10 @@ h2 {
     margin: 0;
     font-family: AvenirNextCyr-Demi;
     text-wrap: pretty;
-    border: 1px solid rgb(213, 2, 167);
+    // border: 1px solid rgb(213, 2, 167);
 
     @media screen and (max-width: 930px) {
-        border: 1px solid rgb(213, 2, 167);
+        // border: 1px solid rgb(213, 2, 167);
     }
 }
 
@@ -1246,11 +1248,11 @@ footer {
     box-shadow: 0 -6px 4px -4px #00E0FF;
 
     .footer-head {
+        padding-top: 65px;  
         @media screen and (max-width: 820px) {
             display: block;
         }
 
-        padding-top: 65px;
 
         .logo {
             .logo-text {
