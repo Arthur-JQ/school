@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nconst accSingleTriggers = doc
   \**********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst swiper = new Swiper('.swiper', {\n    // Optional parameters\n    direction: 'horizontal',\n    slidesPerView: 3,\n\n    loop: true,\n  \n    // If we need pagination\n    pagination: {\n      el: '.swiper-pagination',\n    },\n  \n    // Navigation arrows\n    navigation: {\n      nextEl: '.swiper-button-next',\n      prevEl: '.swiper-button-prev',\n    },\n  \n    // And if we need scrollbar\n    scrollbar: {\n      el: '.swiper-scrollbar',\n    },\n  });\n\n//# sourceURL=webpack:///./src/test1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst swiper = new Swiper('.swiper', {\n    // Optional parameters\n    direction: 'horizontal',\n    slidesPerView: 3,\n    breakpoints: {\n      // when window width is >= 320px\n      // 320: {\n      //   slidesPerView: 2,\n      //   spaceBetween: 20\n      // },\n      // when window width is >= 480px\n      // 480: {\n      //   slidesPerView: 3,\n      //   spaceBetween: 30\n      // },\n      // when window width is >= 640px\n      640: {\n        slidesPerView: 2,\n        spaceBetween: 40\n      }\n    },\n    loop: true,\n  \n    // If we need pagination\n    pagination: {\n      el: '.swiper-pagination',\n    },\n  \n    // Navigation arrows\n    navigation: {\n      nextEl: '.swiper-button-next',\n      prevEl: '.swiper-button-prev',\n    },\n  \n    // And if we need scrollbar\n    scrollbar: {\n      el: '.swiper-scrollbar',\n    },\n  });\n\n//# sourceURL=webpack:///./src/test1.js?");
 
 /***/ })
 
