@@ -850,6 +850,7 @@ main .important {
 @media screen and (max-width: 1000px) {
   main .important {
     height: 840px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 800px) {
