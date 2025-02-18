@@ -85,8 +85,8 @@ h2 {
     text-wrap: pretty;
     // border: 1px solid rgb(213, 2, 167);
 
-    @media screen and (max-width: 930px) {
-        // border: 1px solid rgb(213, 2, 167);
+    @media screen and (max-width: 630px) {
+        border: 1px solid rgb(213, 2, 167);
     }
 }
 
@@ -436,7 +436,9 @@ header {
                 @media screen and (max-width: 880px) {
                     top: 20px;
                 }
-
+                @media screen and (max-width: 630px) {
+                    display: none;
+                }
                 p {
                     transform: rotate(-90deg);
                     font-size: 10px;
@@ -748,7 +750,7 @@ main {
 
         .ai-content {
             opacity: 1;
-
+            padding: 0 !important;
             .ai-content__info {
                 h2 {
                     padding-top: 117px;

@@ -165,6 +165,12 @@ h2 span {
   font-family: AvenirNextCyr-Demi;
   text-wrap: pretty;
 }
+@media screen and (max-width: 630px) {
+  * {
+    border: 1px solid rgb(213, 2, 167);
+  }
+}
+
 .container {
   max-width: 1290px;
   padding: 0 300px;
@@ -495,6 +501,11 @@ header .tel a {
     top: 20px;
   }
 }
+@media screen and (max-width: 630px) {
+  .home__background .about-us .about-us__info .down {
+    display: none;
+  }
+}
 .home__background .about-us .about-us__info .down p {
   transform: rotate(-90deg);
   font-size: 10px;
@@ -784,6 +795,7 @@ main .ai {
 }
 main .ai .ai-content {
   opacity: 1;
+  padding: 0 !important;
 }
 main .ai .ai-content .ai-content__info h2 {
   padding-top: 117px;
