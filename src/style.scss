@@ -811,11 +811,9 @@ main {
                         margin-top: 5px;
                         max-width: 624px;
                         width: 100%;
-
                         @media screen and (max-width: 500px) {
                             margin-right: 10px;
                             padding: 0;
-
                         }
 
                         p {
@@ -829,15 +827,12 @@ main {
                             color: $colorwhite;
                             display: flex;
                             align-items: center;
-
                             @media screen and (max-width: 1200px) {
                                 font-size: 14px;
-
                             }
                         }
                     }
                 }
-
             }
 
             .ai-content__photo {
