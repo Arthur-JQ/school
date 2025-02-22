@@ -86,6 +86,10 @@
   top: 120px !important;
 }
 
+.swiper-button-prev {
+  top: 120px !important;
+}
+
 .flexbox {
   display: flex;
   justify-content: space-between;
@@ -847,6 +851,11 @@ main .ai .ai-content .ai-content__info ul li {
   max-width: 624px;
   width: 100%;
 }
+@media screen and (max-width: 650px) {
+  main .ai .ai-content .ai-content__info ul li {
+    padding: 10px 0;
+  }
+}
 @media screen and (max-width: 500px) {
   main .ai .ai-content .ai-content__info ul li {
     margin-right: 10px;
@@ -1162,6 +1171,12 @@ main .author .author-info h2 {
   margin: 0 0 107px 12px;
   padding-top: 107px;
 }
+@media screen and (max-width: 600px) {
+  main .author .author-info h2 {
+    margin: 0 0 47px 2px;
+    padding-top: 16px;
+  }
+}
 main .author .author-info p {
   font-size: 17px;
   font-weight: 450;
@@ -1171,6 +1186,11 @@ main .author .author-info p {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: #FFFFFF;
+}
+@media screen and (max-width: 500px) {
+  main .author .author-info p {
+    margin-top: 5px;
+  }
 }
 main .author .author-info .mt-20 {
   margin-top: -40px;
@@ -1230,7 +1250,7 @@ main .advertisements .advertisements-main .swiper .swiper-wrapper .swiper-slide 
   line-height: 21px;
   top: 15px;
   position: relative;
-  left: 290px;
+  left: 20px;
   text-align: right;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
