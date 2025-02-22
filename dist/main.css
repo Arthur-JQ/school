@@ -149,6 +149,12 @@ h2 span {
   color: #FFFFFF;
   transition: 0.4s;
 }
+@media screen and (max-width: 500px) {
+  .button-record {
+    margin-bottom: 20px;
+    margin: 0 10px 0 50px;
+  }
+}
 .button-record:hover {
   box-shadow: 0px 7px 20px -7px #00E0FF;
 }
@@ -182,11 +188,6 @@ h2 span {
   font-family: AvenirNextCyr-Demi;
   text-wrap: pretty;
 }
-@media screen and (max-width: 630px) {
-  * {
-    border: 1px solid rgb(213, 2, 167);
-  }
-}
 
 .container {
   max-width: 1290px;
@@ -202,6 +203,16 @@ h2 span {
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 10px;
   }
 }
 header .logo .logo-text {
@@ -813,6 +824,7 @@ main .ai {
 main .ai .ai-content {
   opacity: 1;
   padding: 0 !important;
+  justify-content: center;
 }
 main .ai .ai-content .ai-content__info h2 {
   padding-top: 117px;
@@ -1189,7 +1201,7 @@ main .author .author-info p {
 }
 @media screen and (max-width: 500px) {
   main .author .author-info p {
-    margin-top: 5px;
+    margin-top: 25px;
   }
 }
 main .author .author-info .mt-20 {
