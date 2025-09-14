@@ -267,6 +267,22 @@ header .tel a {
   background-position: top center;
   background-size: cover;
 }
+@media screen and (max-width: 600px) {
+  .home__background .vag {
+    background-color: red;
+    display: none !important;
+  }
+  .home__background .zag {
+    display: none !important;
+    display: flex;
+    flex-direction: column;
+    left: auto;
+    position: static;
+    margin: 0 auto;
+    display: none;
+    text-align: center;
+  }
+}
 .home__background .consultation {
   position: absolute;
   left: 100px;
@@ -487,6 +503,12 @@ header .tel a {
 @media screen and (max-width: 950px) {
   .home__background .about-us .about-us__info .about-us__info__footer {
     margin: 10px 0 0px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home__background .about-us .about-us__info .about-us__info__footer {
+    display: flex;
+    justify-content: center;
   }
 }
 .home__background .about-us .about-us__info .down {
@@ -825,6 +847,9 @@ main .ai .ai-content {
   opacity: 1;
   padding: 0 !important;
   justify-content: center;
+}
+main .ai .ai-content .ai-content__info {
+  margin-left: -200px;
 }
 main .ai .ai-content .ai-content__info h2 {
   padding-top: 117px;

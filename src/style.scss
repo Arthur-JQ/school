@@ -187,6 +187,22 @@ header {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    @media screen and ( max-width: 600px) {
+        .vag {
+            background-color: red;
+            display: none !important;
+        }
+        .zag {
+            display: none !important;
+            display: flex;
+            flex-direction: column;
+            left: auto;
+            position: static;
+            margin: 0 auto;
+            display: none;
+            text-align: center;
+         }
+    }
     .consultation {
         position: absolute;
         left: 100px;
@@ -376,6 +392,10 @@ header {
                 }
                 @media screen and (max-width: 950px) {
                     margin: 10px 0 0px 0;
+                }
+                 @media screen and (max-width: 600px) {
+                    display: flex;
+                    justify-content: center;
                 }
             }
             .down {
@@ -715,11 +735,12 @@ main {
             height: 613px;
 
         }
-
+        
         .ai-content {
             opacity: 1;
             padding: 0 !important;
             justify-content: center;
+           
             .ai-content__info {
                 margin-left: -200px;
                 h2 {
