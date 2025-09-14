@@ -101,6 +101,18 @@ h2 {
         font-style: 15px;
         font-size: 14px;
     }
+
+    @media screen and (max-width: 500px) {
+        max-width: 280px;
+        width: 100%;
+        height: 35px;
+        font-style: 15px;
+        font-size: 11px;
+    }
+
+    @media screen and (max-width: 350px) {
+        margin-left: 0px;
+    }
 }
 
 * {
@@ -108,9 +120,9 @@ h2 {
     font-family: AvenirNextCyr-Demi;
     text-wrap: pretty;
 
-    @media screen and (max-width: 630px) {
-        border: 1px solid rgb(213, 2, 167);
-    }
+    // @media screen and (max-width: 630px) {
+    //     border: 1px solid rgb(213, 2, 167);
+    // }
 }
 
 .container {
@@ -144,6 +156,11 @@ h2 {
 }
 
 header {
+    @media screen and (max-width:500px) {
+        flex-direction: column;
+
+    }
+
     .logo {
         .logo-text {
             margin-left: 10px;
@@ -232,11 +249,13 @@ header {
         height: 230px;
         align-items: center;
         justify-content: space-between;
-   @media screen and (max-width: 800px) {
-                flex-direction: column;
-    align-items: baseline;
-    gap: 15px;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            align-items: baseline;
+            gap: 15px;
         }
+
         @media screen and (max-width: 1400px) {
             left: 0;
         }
@@ -298,6 +317,12 @@ header {
         }
 
         .about-us__info {
+            @media screen and (max-width:500px) {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+            }
+
             max-width: 700px;
             width: 100%;
 
@@ -333,6 +358,9 @@ header {
                     height: 80px;
                     display: flex;
                 }
+                  @media screen and (max-width: 400px) {
+                    font-size: 40px;
+                }
             }
 
             .about-us__info__web {
@@ -354,6 +382,10 @@ header {
             }
 
             .about-us__info__guarantee {
+                @media screen and (max-width: 500px) {
+                    justify-content: center;
+                }
+
                 .about-us__info__guarantee__certificate {
                     width: 71px;
                     display: flex;
@@ -623,6 +655,8 @@ main {
                             max-width: 170px;
                             padding-left: 10px;
 
+
+
                             * {
                                 font-size: 13px !important;
                             }
@@ -647,6 +681,10 @@ main {
                             border: 2px solid #49b8e84a !important;
                             padding-left: 30px;
                             padding-right: 15px;
+                        }
+
+                        @media (max-width: 400px) {
+                            padding: 0;
                         }
 
                         &::after {
@@ -743,6 +781,10 @@ main {
                             padding-right: 15px;
                         }
 
+                        @media (max-width: 400px) {
+                            padding: 0;
+                        }
+
                         &::after {
                             transition: all 0.9s ease;
                             content: "";
@@ -810,6 +852,10 @@ main {
 
         @media screen and (max-width: 1200px) {
             height: 613px;
+        }
+
+        @media screen and (max-width: 350px) {
+            height: 673px;
 
         }
 
@@ -819,8 +865,13 @@ main {
             justify-content: center;
 
             .ai-content__info {
+                @media screen and (max-width: 370px) {
+                    height: 1300px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
-                // margin-left: -200px;
                 h2 {
                     padding-top: 117px;
                     margin-bottom: 64px;
@@ -844,6 +895,10 @@ main {
 
                     @media screen and (max-width: 500px) {
                         padding-right: 10px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        margin-bottom: 10px;
                     }
 
                     li {
@@ -1373,9 +1428,10 @@ footer {
         }
 
         .logo {
-              @media screen and (max-width: 1000px) {
-                    justify-content: space-around;
-                }
+            @media screen and (max-width: 1000px) {
+                justify-content: space-around;
+            }
+
             img {
 
                 @media screen and (max-width: 720px) {
@@ -1424,13 +1480,16 @@ footer {
             .me-contact {
                 max-width: 460px;
                 width: 100%;
+
                 @media screen and (max-width: 1000px) {
                     justify-content: space-around;
                 }
+
                 @media screen and (max-width: 550px) {
                     display: flex;
                     flex-direction: column;
                 }
+
                 a {
                     font-size: 18px;
                     font-weight: 450;
@@ -1496,8 +1555,9 @@ footer {
 
                 div {
                     display: flex;
-                      @media screen and (max-width: 1000px) {
-                     margin-left: -36px;
+
+                    @media screen and (max-width: 1000px) {
+                        margin-left: -36px;
                     }
                 }
 

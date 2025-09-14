@@ -182,16 +182,25 @@ h2 span {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 500px) {
+  .button-record {
+    max-width: 280px;
+    width: 100%;
+    height: 35px;
+    font-style: 15px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .button-record {
+    margin-left: 0px;
+  }
+}
 
 * {
   margin: 0;
   font-family: AvenirNextCyr-Demi;
   text-wrap: pretty;
-}
-@media screen and (max-width: 630px) {
-  * {
-    border: 1px solid rgb(213, 2, 167);
-  }
 }
 
 .container {
@@ -218,6 +227,11 @@ h2 span {
 @media screen and (max-width: 550px) {
   .container {
     padding: 0 2px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
   }
 }
 header .logo .logo-text {
@@ -370,6 +384,13 @@ header .tel a {
   max-width: 700px;
   width: 100%;
 }
+@media screen and (max-width: 500px) {
+  .home__background .about-us .about-us__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home__background .about-us .about-us__info .about-us__info__welcome {
   font-size: 18px;
   font-weight: 600;
@@ -404,6 +425,11 @@ header .tel a {
     display: flex;
   }
 }
+@media screen and (max-width: 400px) {
+  .home__background .about-us .about-us__info h1 {
+    font-size: 40px;
+  }
+}
 .home__background .about-us .about-us__info .about-us__info__web {
   font-size: 18px;
   font-weight: 450;
@@ -421,6 +447,11 @@ header .tel a {
 @media screen and (max-width: 1030px) {
   .home__background .about-us .about-us__info .about-us__info__web {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .home__background .about-us .about-us__info .about-us__info__guarantee {
+    justify-content: center;
   }
 }
 .home__background .about-us .about-us__info .about-us__info__guarantee .about-us__info__guarantee__certificate {
@@ -714,6 +745,11 @@ main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
     padding-right: 15px;
   }
 }
+@media (max-width: 400px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row1 div {
+    padding: 0;
+  }
+}
 main .advantages .advantages-main .advantages-card .advantages-card__row1 div::after {
   transition: all 0.9s ease;
   content: "";
@@ -804,6 +840,11 @@ main .advantages .advantages-main .advantages-card .advantages-card__row2 div {
     padding-right: 15px;
   }
 }
+@media (max-width: 400px) {
+  main .advantages .advantages-main .advantages-card .advantages-card__row2 div {
+    padding: 0;
+  }
+}
 main .advantages .advantages-main .advantages-card .advantages-card__row2 div::after {
   transition: all 0.9s ease;
   content: "";
@@ -861,10 +902,23 @@ main .ai {
     height: 613px;
   }
 }
+@media screen and (max-width: 350px) {
+  main .ai {
+    height: 673px;
+  }
+}
 main .ai .ai-content {
   opacity: 1;
   padding: 0 !important;
   justify-content: center;
+}
+@media screen and (max-width: 370px) {
+  main .ai .ai-content .ai-content__info {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 main .ai .ai-content .ai-content__info h2 {
   padding-top: 117px;
@@ -891,6 +945,11 @@ main .ai .ai-content .ai-content__info ul {
 @media screen and (max-width: 500px) {
   main .ai .ai-content .ai-content__info ul {
     padding-right: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .ai .ai-content .ai-content__info ul {
+    margin-bottom: 10px;
   }
 }
 main .ai .ai-content .ai-content__info ul li {
