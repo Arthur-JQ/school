@@ -9,7 +9,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -21,7 +21,8 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: npm run build   # чтобы в ./dist появился готовый сайт
+      - run: npm run build
+      - run: ls -la dist && test -f dist/index.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
